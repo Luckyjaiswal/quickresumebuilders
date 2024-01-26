@@ -1,0 +1,46 @@
+#cv-form{
+    background-color: rgba(243, 175, 236, 0.599);
+}
+#cv-template{
+  display: none;
+}
+
+#template3 h2{
+    background-color: rgb(212, 182, 143);
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 40px;
+}
+h3#sec{
+    background-color: rgb(161, 165, 177);
+    margin-bottom: 25px;
+    margin-top: 10px;
+}
+
+.myimg{
+  /* border: 1px solid black; */
+  border-radius: 50%;
+  width: 200px;
+}
+
+.background{
+  background-color: rgb(1, 37, 37);
+}
+
+h5{
+   color: rgb(209, 214, 218);
+}
+h3{
+   color: black;
+   font-size: larger;
+   font-size: x-large;
+}
+#comman-h{
+   color: rgb(209, 214, 218 )
+}
+.comman-d{
+   color: rgb(209, 214, 218 );
+   text-align: left;
+   
+}
