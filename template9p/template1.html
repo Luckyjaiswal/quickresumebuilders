@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Resume Generator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="conatiner" id="cv-form">
+      <h1 class="text-center my-2">Resume Generator</h1>
+      <p class="text-center">By Lucky Jaiswal</p>
+
+      <div class="row">
+        <div class="col-md-6">
+          <h3>Personal Information</h3>
+
+          <div class="form-group mt-2"  >
+            <label for="nameField">Your Name</label>
+            <input type="text" id="nameField" class="form-control" placeholder="Enter here">
+          </div>
+
+          <div class="form-group mt-2">
+            <label for="contactField">Your Contact</label>
+            <input type="text" id="contactField" class="form-control" placeholder="Enter here">
+          </div>
+
+          <div class="form-group mt-2">
+            <div>
+              
+            </div>
+            <label for="addressField">Your Address</label>
+            <textarea type="text" id="addressField" class="form-control" placeholder="Enter here"></textarea>
+          </div>
+
+          <div class="form-group mt-3">
+            <label for="imgField">Select Your Profile-Picture</label>
+            <input id="imgField" type="file" class="form-control">
+          </div>
+
+          <p class="text-secondary my-3">Important Links</p>
+          <div class="form-group mt-2">
+            <label for="fbField">Facebook </label>
+            <input type="text" id="fbField" class="form-control" placeholder="Enter here">
+          </div>
+          <div class="form-group mt-2">
+            <label for="instaField">Instagram</label>
+            <input type="text" id="instaField" class="form-control" placeholder="Enter here">
+          </div>
+          <div class="form-group mt-2">
+            <label for="linkedField">LinkedIn</label>
+            <input type="text" id="linkedField" class="form-control" placeholder="Enter here">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <h3>Professional Information</h3>
+          <div class="form-group mt-2">
+            <label for="objectiveField">Objective</label>
+            <textarea type="text" id="objectiveField" class="form-control" placeholder="Enter here"></textarea>
+          </div>
+
+          <div class="form-group mt-2" id="we">
+            <label for="">Work Experience</label>
+            <textarea type="text" class="form-control weField" rows="3"  placeholder="Enter here"></textarea>
+            <!-- new text area generate dynamically -->
+            <div class="conatiner text-center mt-2" id="weAddButton">
+              <button onclick="addNewWEField()" class="btn btn-primary btn-sm">Add</button>
+            </div>
+          </div>
+
+          <div class="form-group mt-2" id="aq">
+            <label for="">Academic Qualification</label>
+            <textarea type="text"  class="form-control eqField" placeholder="Enter here"></textarea>
+ 
+            <div class="conatiner text-center mt-2"id="aqAddButton">
+              <button onclick="addNewAQField()" class="btn btn-primary btn-sm">Add</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      
+      <div class="conatiner text-center mt-3">
+        <button onclick="generateCV()" class="btn btn-primary btn-lg">Generate CV</button>
+      </div>
+    </div>
+  
+    <!-- cv templet -->
+    <div class="container" id="cv-template">
+      <div class="row">
+        <div class="col-md-4  text-center py-5 background">
+         <img src="/Mainpage/images/pngtree-professional-image-of-white-collar-mens-shirts-with-beard-png-image_4154872.jpg" alt="" id="imgTemplate" class="img-fluid myimg">
+
+         <div class="conatiner">
+          <p id="nameT1">Abhijeet Kushwah</p>
+          <p id="contactT">9111225975,9112225945</p>
+          <p id="addressT">136, Sector-A Kalani Nagar Indore M.P,India</p>
+          <hr>
+          <p ><a id="fbT" href="">https://www.facebook.com</a></p>
+          <p ><a id="instaT" href="">https://www.insatagram.com</a></p>
+          <p ><a id="linkedT" href="">https://www.LinkedIn.com</a></p>
+         </div>
+
+        </div>
+<!-- second coloum -->
+        <div class="col-md-8 py-5">
+           <h1 id="nameT2" class="text-center" style="font-weight: 820;">Abhijeet Kushwah</h1>
+
+           <!-- objective card -->
+           <div class="card mt-4">
+            <div class="card-header background">
+              <h3>obective</h3>
+            </div>
+            <div class="card-body">
+              <p id="objectiveT">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut quibusdam reprehenderit laboriosam repudiandae quae perspiciatis nisi labore velit, ipsum doloremque illum rem expedita repellat eius, consequuntur animi sunt. Sequi, molestias.</p>
+            </div>
+           </div>
+
+           <!-- work experience -->
+           <div class="card mt-4">
+            <div class="card-header background">
+              <h3>Work Experience</h3>
+            </div>
+            <div class="card-body">
+              <ul id="weT">
+                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, molestias!</li>
+                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, molestias!</li>
+                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, molestias!</li>
+              </ul>
+             </div>
+           </div>
+           <!-- Academic Qualification -->
+           <div class="card mt-4">
+            <div class="card-header background">
+              <h3>Academic Qualifiction</h3>
+            </div>
+            <div class="card-body">
+              <ul id="aqT">
+                <li>Lorem dipsum dolor sit, amet consectetur adipisicing elit. Quisquam, molestias!</li>
+                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, molestias!</li>
+                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, molestias!</li>
+              </ul>
+             </div>
+           </div>
+
+           <div class="container mt-3 text-center" id="main">
+            <button onclick="generatePDF()" class="btn btn-success ">Generate PDF</button>
+           </div>
+
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

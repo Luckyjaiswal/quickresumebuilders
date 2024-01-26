@@ -1,0 +1,58 @@
+#cv-form{
+    margin-left: 20px;
+    margin-right: 20px;
+     background-color: rgb(205, 169, 169);
+ }
+#cv-template{
+ display: none;
+ border: solid black 2px;
+ /* background-color: pink; */
+  
+}
+
+.myimg{
+ /* border: 1px solid black; */
+ border-radius: 50%;
+ width: 200px;
+}
+
+.background{
+ /* background-color: aqua; */
+ background-color:rgba(231, 82, 97, 0.599);
+
+}
+#h3{
+    background-color:rgb(195, 65, 65);  
+     color: white;  
+}
+#section1{
+ margin-top: 30px; 
+     /* background-color:  rgb(42, 41, 41); */
+     background-color: rgb(37, 41, 39);
+     color: rgb(250, 244, 244);
+     padding: 25px;
+     border-radius: 8px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+     max-width: 600px;
+     width: 100%;
+     border: solid black 2px; 
+     align-items: center;
+     
+}
+#section2{
+ margin-top: 30px; 
+     background-color: rgb(37, 41, 39);
+     color: rgb(250, 244, 244);
+     padding: 25px;
+     border-radius: 8px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+     max-width: 600px;
+     width: 100%;
+     border: solid black 2px; 
+     margin-left: 305px;
+    
+     
+}
+
+
+
