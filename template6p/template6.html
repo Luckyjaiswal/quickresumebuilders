@@ -11,28 +11,8 @@
 
  
 
-    <div class="conatiner" id="cv-form">
+    <div class="container" id="cv-form">
       <h1 class="text-center mb-5 ">Resume Generator</h1>
-      <nav aria-label="Page navigation example" id="nav" style="padding-left: 350px;" >
-        <ul  class="pagination">
-          <li class="page-item">
-            <a class="page-link" href="#" onclick="prev()"aria-label="Previous">
-              <span aria-hidden="true">&laquo;</span>
-            </a>
-          </li>
-          <li class="page-item"><a class="page-link"  onclick="prev()" href="#section1">Personal Information</a></li>
-          <li class="page-item"><a class="page-link"  onclick="profes()" href="#section2">Professional Information</a></li>
-        
-          <li class="page-item">
-            <a class="page-link"  onclick="profes()" href="#" aria-label="Next">
-              <span aria-hidden="true">&raquo;</span>
-            </a>
-          </li>
-        </ul>
-      </nav>      
-
-      
-    
         <div class="container" id="section1" style="display:  block;">
           <h3 style="text-align: center;">Personal Information</h3><hr>
 
@@ -130,7 +110,7 @@
       
         <!-- next coloum -->
       
-        <div class="conatiner" id="section2" style="display: none;">
+        <div class="container" id="section2" style="display: none;">
           <h3 style="text-align: center;">Professional Information</h3><hr>
 
 
@@ -147,7 +127,7 @@
                   <label for="">Technical Skill</label>
                   <input type="text"  class="form-control tsField" placeholder="Enter here"></input>
          
-                  <div class="conatiner text-center mt-2"id="tsAddButton">
+                  <div class="container text-center mt-2"id="tsAddButton">
                     <button onclick="addNewTSField()" class="btn btn-success btn-sm">Add</button>
                   </div>
                 </div>
@@ -163,7 +143,7 @@
                   <label for="">Work Experience</label>
                   <textarea type="text" class="form-control weField" rows="3"  placeholder="Enter here"></textarea>
                   <!-- new text area generate dynamically -->
-                  <div class="conatiner text-center mt-2" id="weAddButton">
+                  <div class="container text-center mt-2" id="weAddButton">
                     <button onclick="addNewWEField()" class="btn btn-success btn-sm">Add</button>
                   </div>
                 </div>
@@ -177,7 +157,7 @@
                 <div class="form-group mt-2" id="aq">
                   <label for="">Academic Qualification</label>
                   <textarea type="text"  class="form-control eqField" placeholder="Enter here"></textarea>
-                  <div class="conatiner text-center mt-2"id="aqAddButton">
+                  <div class="container text-center mt-2"id="aqAddButton">
                     <button onclick="addNewAQField()" class="btn btn-success btn-sm">Add</button>
                   </div>
                 </div>
@@ -189,12 +169,12 @@
           <div class="container text-center">
             <div class="row">
               <div class="col">
-                <div class="conatiner text-center mt-3">
+                <div class="container text-center mt-3">
                   <button onclick="prev()"  class="btn btn-danger btn-lg">Back</button>
                 </div>
               </div>
               <div class="col">
-                <div class="conatiner text-center mt-3">
+                <div class="container text-center mt-3">
                   <button onclick="generateCV()"  class="btn btn-danger btn-lg">Generate CV</button>
                 </div>
               </div>
@@ -222,7 +202,7 @@
          <div class="container mt-5  " >
           <h3 id="h2">PERSONAL INFO</h3>
          </div>
-         <div class="conatiner" style="text-align: left;color: white;">
+         <div class="container" style="text-align: left;color: white;">
         
          <p><img src="/Mainpage/icons/person.png"  
           alt="">: <span id="nameT1">Abhijeet  <span id="nameT3">Kushwah</span></span></p> 
