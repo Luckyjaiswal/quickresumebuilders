@@ -1,8 +1,11 @@
 #cv-form{
     margin-left: 20px;
     margin-right: 20px;
-     background-color: rgb(205, 169, 169);
+/*      background-color: rgb(205, 169, 169); */
  }
+body{
+    background-color: rgb(205, 169, 169);
+}
 #cv-template{
  display: none;
  border: solid black 2px;
@@ -56,7 +59,7 @@
      max-width: 600px;
      width: 100%;
      border: solid black 2px; 
-     margin-left: 305px;
+      align-items: center;
     
      
 }
