@@ -1,5 +1,7 @@
 #cv-form{
     background-color: rgba(243, 175, 236, 0.599);
+    padding-left: 12px;
+    padding-right: 12px;
 }
 #cv-template{
   display: none;
